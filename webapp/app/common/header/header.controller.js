@@ -11,7 +11,19 @@ define(['angular'], function (angular) {
 				'$location',
 				function ($scope, $location) {
 					$scope.currentPath = $location.$$path.slice(1);
-					console.log($scope.currentPath)
+					$scope.dropdownMenuToggle = true;
+
+					$scope.dropdownMenuDisplayToggle = function (show) {
+						if (show) {
+							$scope.dropdownMenuToggle = true;
+						} else {
+							$scope.dropdownMenuToggle = false;
+						}
+					};
+
+					$scope.$on('$stateChangeSuccess', function (event) {
+						$scope.currentPath = $location.$$path.slice(1);
+					});
 				}
 			])
 		}

@@ -7,7 +7,7 @@ require.config({
 		startup: './app',
 		angular: '../lib/angular/angular',
 		ngRoute: '../lib/angular/angular-ui-router',
-		jquery: '../lib/jquery/jquery-1.7.2',
+		jquery: '../lib/jquery/jquery',
 		bootstrap: '../lib/bootstrap/bootstrap',
 		pace: '../lib/pace/pace',
 		appController: 'tp.loader/controller.all',
@@ -26,6 +26,10 @@ require.config({
 		ngRoute: {
 			exports: 'ngRoute',
 			deps: ['angular']
+		},
+		bootstrap: {
+			exports: 'bootstrap',
+			deps: ['jquery']
 		}
 	},
 	package: {

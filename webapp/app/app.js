@@ -9,7 +9,8 @@ define([
 	'appFilter',
 	'appDirective',
 	'appController',
-	'ngRoute'
+	'ngRoute',
+	'bootstrap'
 ], function (pace, angular, routes, services, filters, directives, controllers) {
 	paceOptions = {
 		ajax: true,

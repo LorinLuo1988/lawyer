@@ -1,10 +1,18 @@
 <div class="header row">
 	<ul class="header-nav clear-fix text-center">
-		<li ng-class="{active: currentPath == 'primary'}">
-			<a ui-sref="primary">
+		<li ng-mouseenter="dropdownMenuDisplayToggle(true)" ng-mouseleave="dropdownMenuDisplayToggle(false)" ng-class="{active: currentPath == 'primary'}" class="btn-group">
+			<a ui-sref="primary" class="dropdown-toggle" data-toggle="dropdown">
 				<span class="glyphicon glyphicon-home"></span>
 				首页
+				<span class="caret"></span>
 			</a>
+			<ul class="dropdown-menu" ng-show="dropdownMenuToggle">
+				<li><a href="#">Action</a></li>
+				<li><a href="#">Another action</a></li>
+				<li><a href="#">Something else here</a></li>
+				<li role="separator" class="divider"></li>
+				<li><a href="#">Separated link</a></li>
+			</ul>
 		</li>
 		<li ng-class="{active: currentPath == 'lawyerIntroduce'}">
 			<a ui-sref="lawyerIntroduce">

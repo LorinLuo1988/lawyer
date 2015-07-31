@@ -42,7 +42,11 @@
 	height: 100%;
 	font-weight: 700;
 	color: #4dff6f;
+	text-decoration: none;
 }
 .header-nav > li > a > span {
 	margin-right: 5px;
+}
+.header .header-nav .dropdown-menu {
+	top: calc(100% - 2px);
 }
