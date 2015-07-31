@@ -1,0 +1,52 @@
+<div class="header row">
+	<ul class="header-nav clear-fix text-center">
+		<li ng-class="{active: currentPath == 'primary'}">
+			<a ui-sref="primary">
+				<span class="glyphicon glyphicon-home"></span>
+				首页
+			</a>
+		</li>
+		<li ng-class="{active: currentPath == 'lawyerIntroduce'}">
+			<a ui-sref="lawyerIntroduce">
+				<span class="glyphicon glyphicon-user"></span>
+				律师简介
+			</a>
+		</li>
+		<li ng-class="{active: currentPath == 'lawyerMien'}">
+			<a ui-sref="lawyerMien">
+				<span class="glyphicon glyphicon-user"></span>
+				律师风采
+			</a>
+		</li>
+		<li ng-class="{active: currentPath == 'news'}">
+			<a ui-sref="news">
+				<span class="glyphicon glyphicon-blackboard"></span>
+				新闻快递
+			</a>
+		</li>
+		<li ng-class="{active: currentPath == 'commonSense'}">
+			<a ui-sref="commonSense">
+				<span class="glyphicon glyphicon-education"></span>
+				法律常识
+			</a>
+		</li>
+		<li ng-class="{active: currentPath == 'businessAreas'}">
+			<a ui-sref="businessAreas">
+				<span class="glyphicon glyphicon-modal-window"></span>
+				业务领域
+			</a>
+		</li>
+		<li ng-class="{active: currentPath == 'messageConsult'}">
+			<a ui-sref="messageConsult">
+				<span class="glyphicon glyphicon-envelope"></span>
+				留言咨询
+			</a>
+		</li>
+		<li ng-class="{active: currentPath == 'contact'}">
+			<a ui-sref="contact">
+				<span class="glyphicon glyphicon-phone"></span>
+				联系方式
+			</a>
+		</li>
+	</ul>
+</div>
