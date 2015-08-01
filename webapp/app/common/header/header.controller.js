@@ -9,13 +9,28 @@ define(['angular'], function (angular) {
 			module.controller('headerController', [
 				'$scope',
 				'$location',
+                '$window',
+                '$interval',
                 'headerService',
-				function ($scope, $location, headerService) {
+				function ($scope, $location, $window, $interval, headerService) {
 					$scope.currentPath = $location.$$path.slice(1);
 
 					$scope.$on('$stateChangeSuccess', function (event) {
 						$scope.currentPath = $location.$$path.slice(1);
-					});
+                        $scope.scrollTop();
+                    });
+
+                    $scope.scrollTop = function () {
+                        var interval = $interval(function () {
+                            $window.scrollTo(0, angular.element(document).scrollTop() - 30);
+
+                            if (angular.element(document).scrollTop() - 30 <= 0) {
+                                $window.scrollTo(0, 0);
+                                $interval.cancel(interval);
+                            }
+                        }, 10);
+
+                    };
 				}
 			])
 		}
