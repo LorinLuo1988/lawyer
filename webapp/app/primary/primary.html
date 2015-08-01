@@ -4,7 +4,7 @@
 	</div>
 </div>
 <div class="row primary">
-    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
         <div class="panel panel-success">
             <div class="panel-heading">
                 <p class="panel-title">
@@ -12,18 +12,18 @@
                 </p>
             </div>
             <div class="panel-body">
-                <textarea style="resize: none;" class="btn-block" name="" id="" rows="8"></textarea>
+                <textarea placeholder="请输入留言信息" ng-model="messageInfo" style="resize: none;" class="btn-block" name="" id="" rows="8"></textarea>
             </div>
             <div class="panel-footer clear-fix">
-                <button class="btn btn-success pull-right" ng-click="messageSubmitCheck()">提交</button>
-                <button class="btn btn-danger pull-right">重写</button>
+                <button class="btn btn-success pull-right" ng-click="messageSubmitCheck('submit')">提交</button>
+                <button class="btn btn-danger pull-right" ng-click="messageSubmitCheck('reset')">重写</button>
             </div>
         </div>
     </div>
-    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
         <div class="panel panel-info">
             <div class="panel-heading">
-                <p class="panel-title">律师简介--QQ律师</p>
+                <p class="panel-title">律师简介 -- 李玉洁律师</p>
             </div>
             <div class="panel-body">
                 <p class="clear-fix">
@@ -31,6 +31,90 @@
                     该律师从事工作多年，工作经验丰富。
                 </p>
             </div>
+        </div>
+    </div>
+</div>
+<div class="row primary">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <p class="panel-title">
+                    成功案例
+                </p>
+            </div>
+            <div class="panel-body">
+
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="#">Cras justo odio</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Dapibus ac facilisis in</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Morbi leo risus</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <p class="panel-title">律师随笔</p>
+            </div>
+            <div class="panel-body">
+                <p class="clear-fix">
+                    深入剖析案例
+                </p>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="#">深入剖析案例</a></li>
+                <li class="list-group-item"><a href="#">深入剖析案例</a></li>
+                <li class="list-group-item"><a href="#">深入剖析案例</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row primary">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <p class="panel-title">
+                    律师风采
+                </p>
+            </div>
+            <div class="panel-body">
+
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="#">Cras justo odio</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Dapibus ac facilisis in</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Morbi leo risus</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <p class="panel-title">法律速递</p>
+            </div>
+            <div class="panel-body">
+                <p class="clear-fix">
+                    深入剖析案例
+                </p>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="#">深入剖析案例</a></li>
+                <li class="list-group-item"><a href="#">深入剖析案例</a></li>
+                <li class="list-group-item"><a href="#">深入剖析案例</a></li>
+            </ul>
         </div>
     </div>
 </div>

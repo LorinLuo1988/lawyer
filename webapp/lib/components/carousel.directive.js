@@ -13,7 +13,7 @@ define(['angular'], function (angular) {
                         carousel: '=',
                         ulStyle: '@'
                     },
-                    template: '<div style="width: 100%;overflow: hidden; background: url(style/images/carousel-bg.jpg) no-repeat; background-size: 100% 100%;">' +
+                    template: '<div style="width: 100%;overflow: hidden; background: url(style/images/carousel-bg.jpg) no-repeat; background-size: 100% 100%; margin-bottom: 10px;">' +
                         '<ul class="clear-fix" style="margin: 0px; position: relative; left: 0px; top: 0px;">' +
                         '<li style="text-align: center; float: left;" class="carouselLi" ng-repeat="img in carousel">' +
                         '<img style="height: 300px; margin: 0 auto; border: 1px solid #4dff6f; box-shadow: 1px 1px 10px 1px #4dff6f, 1px 1px 10px 1px #4dff6f inset;" ng-src="{{img}}"/>' +

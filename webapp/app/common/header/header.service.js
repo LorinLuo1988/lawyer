@@ -7,13 +7,7 @@ define(['angular'], function (angular) {
             var module = angular.module('Services');
 
             module.service('headerService', [function () {
-                this.dropdownMenuDisplayToggle = function (isShow) {
-                    if (isShow) {
-                        $('.btn-group').addClass('open');
-                    } else {
-                        $('.btn-group').removeClass('open');
-                    }
-                }
+
             }]);
         }
     }

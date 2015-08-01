@@ -22,15 +22,15 @@ define(['angular'], function (angular) {
                         '</div><div class="modal-body">' +
                         '<div class="container-fluid">' +
                         '<div class="row">' +
-                        '<div class="col-sm-9 text-info" ng-bind="modal.content"><div class="row">' +
+                        '<div class="col-sm-9 {{modal.titleStyle}}" ng-bind="modal.content"><div class="row">' +
                         '</div>' +
                         '</div>' +
                         '</div>' +
                         '</div>' +
                         '</div>' +
                         '<div class="modal-footer">' +
-                        '<button type="button" class="btn btn-danger" data-dismiss="modal">关闭</button>' +
-                        '<button type="button" class="btn btn-success" data-dismiss="modal">确定</button>' +
+                        '<button type="button" class="btn btn-danger" data-dismiss="modal" ng-click="modal.cancelCallback();">关闭</button>' +
+                        '<button type="button" class="btn btn-success" data-dismiss="modal" ng-click="modal.sureCallback();">确定</button>' +
                         '</div>' +
                         '</div><!-- /.modal-content -->' +
                         '</div>' +

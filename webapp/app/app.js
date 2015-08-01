@@ -44,7 +44,9 @@ define([
 
         app.run(['$rootScope', function ($rootScope) {
             $rootScope.modalOption = {
-                content: ''
+                content: '...',
+                title: 'Modal',
+                titleStyle: 'text-successinfo'
             };
 
             $rootScope.$on('modalOptionSetup', function (event, modalOption) {

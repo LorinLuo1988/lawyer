@@ -13,10 +13,6 @@ define(['angular'], function (angular) {
 				function ($scope, $location, headerService) {
 					$scope.currentPath = $location.$$path.slice(1);
 
-				    $scope.dropdownMenuDisplayToggle = function (isShow) {
-                        headerService.dropdownMenuDisplayToggle(isShow);
-					};
-
 					$scope.$on('$stateChangeSuccess', function (event) {
 						$scope.currentPath = $location.$$path.slice(1);
 					});
