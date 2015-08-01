@@ -11,8 +11,11 @@
 	<link rel="stylesheet" href="/lawyer/webapp/app/primary/primary.css"/>
 </head>
 <body>
-<div ng-include="'app/common/header/header.html'" ng-controller="headerController"></div>
-<div ui-view class="container-fluid">
+<div class="container-fluid">
+    <div ng-include="'app/common/header/header.html'" ng-controller="headerController"></div>
+    <div ui-view class="container-fluid">
+    </div>
+    <div modal="modalOption"></div>
 </div>
 
 <script src="/lawyer/webapp/lib/require/require.js" data-main="/lawyer/webapp/app/main"></script>

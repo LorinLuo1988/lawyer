@@ -31,19 +31,31 @@ define([
 		var controllersModule = angular.module('Controllers', []);
 		var filtersModule = angular.module('Filters', []);
 		var directivesModule = angular.module('Directives', []);
-		var servicesModule = angular.module('Service', []);
+		var servicesModule = angular.module('Services', []);
 		var routeModule = angular.module('Routes', ['ui.router']);
 
 		var app = angular.module('app', [
 			'Controllers',
 			'Filters',
 			'Directives',
-			'Service',
+			'Services',
 			'Routes'
 		]);
 
+        app.run(['$rootScope', function ($rootScope) {
+            $rootScope.modalOption = {
+                content: ''
+            };
+
+            $rootScope.$on('modalOptionSetup', function (event, modalOption) {
+                $rootScope.modalOption = modalOption;
+            });
+        }]);
+
 		routes.initialize();
+        services.initialize();
 		controllers.initialize();
+        directives.initialize();
 
 		angular.bootstrap(angular.element(document), ['app']);
 	};

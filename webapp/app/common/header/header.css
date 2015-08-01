@@ -47,6 +47,3 @@
 .header-nav > li > a > span {
 	margin-right: 5px;
 }
-.header .header-nav .dropdown-menu {
-	top: calc(100% - 2px);
-}

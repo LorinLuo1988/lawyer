@@ -13,9 +13,9 @@ define([
 				'$urlRouterProvider',
 				function ($stateProvider, $urlRouterProvider) {
 					$stateProvider
-						.state('news', {
-							url: '/news',
-							templateUrl: 'app/news/news.html'
+						.state('lawyerEssays', {
+							url: '/lawyerEssays',
+							templateUrl: 'app/lawyer.essays/lawyer.essays.html'
 						});
 				}
 			]);

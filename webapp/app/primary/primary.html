@@ -1,5 +1,36 @@
-<div class="row">
+<div class="row primary">
 	<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-		<img class="show-img" ng-src="style/images/show.jpg" alt=""/>
+		<div carousel="carouselImgSrc"></div>
 	</div>
+</div>
+<div class="row primary">
+    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <p class="panel-title">
+                    留言咨询
+                </p>
+            </div>
+            <div class="panel-body">
+                <textarea style="resize: none;" class="btn-block" name="" id="" rows="8"></textarea>
+            </div>
+            <div class="panel-footer clear-fix">
+                <button class="btn btn-success pull-right" ng-click="messageSubmitCheck()">提交</button>
+                <button class="btn btn-danger pull-right">重写</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <p class="panel-title">律师简介--QQ律师</p>
+            </div>
+            <div class="panel-body">
+                <p class="clear-fix">
+                    <img class="portrait" src="style/images/portrait.jpg" alt=""/>
+                    该律师从事工作多年，工作经验丰富。
+                </p>
+            </div>
+        </div>
+    </div>
 </div>

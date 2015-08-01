@@ -15,7 +15,8 @@ define([
 					$stateProvider
 						.state('primary', {
 							url: '/primary',
-							templateUrl: 'app/primary/primary.html'
+							templateUrl: 'app/primary/primary.html',
+                            controller: 'primaryController'
 						});
 
 					$urlRouterProvider.otherwise('primary');

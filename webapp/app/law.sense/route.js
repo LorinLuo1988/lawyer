@@ -10,9 +10,9 @@ define(['angular'], function (angular) {
 				'$urlRouterProvider',
 				'$stateProvider',
 				function ($urlRouterProvider, $stateProvider) {
-					$stateProvider.state('commonSense', {
-						url: '/commonSense',
-						templateUrl: 'app/common.sense/common.sense.html'
+					$stateProvider.state('lawSense', {
+						url: '/lawSense',
+						templateUrl: 'app/law.sense/law.sense.html'
 					})
 				}
 			])

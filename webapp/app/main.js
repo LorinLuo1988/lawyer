@@ -16,7 +16,8 @@ require.config({
 		appRoute: 'tp.loader/route.all',
 		appService: 'tp.loader/service.all',
 
-		headerController: './common/header/header.controller'
+        carouselDirective: '../lib/components/carousel.directive',
+        modalDirective: '../lib/components/modal.directive'
 	},
 	shim: {
 		angular: {

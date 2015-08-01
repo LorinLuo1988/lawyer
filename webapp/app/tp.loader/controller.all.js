@@ -3,7 +3,8 @@
  */
 define([
 	'angular',
-	'headerController'
+	'common/header/header.controller',
+    'primary/primary.controller'
 ], function () {
 	var controllers = Array.prototype.slice.call(arguments, 1);
 

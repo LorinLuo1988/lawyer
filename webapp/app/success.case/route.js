@@ -13,9 +13,9 @@ define([
 				'$urlRouterProvider',
 				function ($stateProvider, $urlRouterProvider) {
 					$stateProvider
-						.state('businessAreas', {
-							url: '/businessAreas',
-							templateUrl: 'app/business.areas/business.areas.html'
+						.state('successCase', {
+							url: '/successCase',
+							templateUrl: 'app/success.case/success.case.html'
 						});
 				}
 			]);

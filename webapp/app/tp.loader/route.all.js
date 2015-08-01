@@ -8,9 +8,9 @@ define([
 	'lawyer.mien/route',
 	'lawyer.introduce/route',
 	'contact/route',
-	'common.sense/route',
-	'news/route',
-	'business.areas/route'
+	'law.sense/route',
+	'success.case/route',
+	'lawyer.essays/route'
 ], function () {
 	Array.prototype.shift.apply(arguments);
 	var routes = arguments;

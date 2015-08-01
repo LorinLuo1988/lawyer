@@ -9,16 +9,12 @@ define(['angular'], function (angular) {
 			module.controller('headerController', [
 				'$scope',
 				'$location',
-				function ($scope, $location) {
+                'headerService',
+				function ($scope, $location, headerService) {
 					$scope.currentPath = $location.$$path.slice(1);
-					$scope.dropdownMenuToggle = true;
 
-					$scope.dropdownMenuDisplayToggle = function (show) {
-						if (show) {
-							$scope.dropdownMenuToggle = true;
-						} else {
-							$scope.dropdownMenuToggle = false;
-						}
+				    $scope.dropdownMenuDisplayToggle = function (isShow) {
+                        headerService.dropdownMenuDisplayToggle(isShow);
 					};
 
 					$scope.$on('$stateChangeSuccess', function (event) {
