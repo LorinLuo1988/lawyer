@@ -4,7 +4,8 @@
 define([
 	'angular',
 	'common/header/header.controller',
-    'primary/primary.controller'
+    'primary/primary.controller',
+    'lawyer.essays/lawyer.essays.controller'
 ], function () {
 	var controllers = Array.prototype.slice.call(arguments, 1);
 

@@ -1,1 +1,20 @@
-<div>lawyer.essays</div>
+<div class="row lawyer-introduce" ng-controller="lawyerEssaysController">
+	<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xs-offset-1 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				律师随笔
+			</div>
+			<div class="panel-body">
+				<p class="clear-fix">
+					记录律师生涯
+				</p>
+			</div>
+			<ul class="list-group">
+				<li ng-click="change($index)" class="list-group-item" ng-repeat="lawyerEssay in lawyerEssays">
+					<span ng-bind="lawyerEssay.date"></span>
+					<a href="#" class="pull-right" ng-bind="lawyerEssay.content"></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
